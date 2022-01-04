@@ -18,7 +18,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: 2px;
-    width: 640px;
+    width: 70%;
     background-color: #1d1d1d;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -53,7 +53,7 @@ button {
     background-color:#1d1d1d;
     box-shadow: 0 0 2px #000;
     margin:10px;
-    padding:5px;
+    padding:20px;
 }
 
 #purple:hover {
@@ -64,14 +64,14 @@ button {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 650px;
+    max-width: 1400px;
 }
 
 .square {
     background-color: #1d1d1d;
     box-shadow: 0 0 2px #000;
-    height: 12px;
-    width: 12px;
+    height: 18px;
+    width: 18px;
     margin: 2px;
     transition: 2s ease;
 }
