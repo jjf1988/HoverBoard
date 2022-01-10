@@ -6,6 +6,7 @@ const colorBlue = '#3498db'
 const colorGreen = '#2ecc71'
 const colorOrange = '#e67e22'
 const colorPurple = '#8e44ad'
+const colorErase = '#1d1d1d'
 
 const purpleBtn = document.getElementById('#purple')
  let chosenColor = colorPurple;
@@ -21,7 +22,7 @@ for(let i = 0; i < SQUARES; i++){
 
     
 
-    square.addEventListener('mousedown', () => setColor(square))
+    square.addEventListener('click', () => setColor(square))
 
     // square.addEventListener('mouseout', () => removeColor(square))
 
@@ -66,6 +67,9 @@ function getSelectedColor(color){
     if(color === "orange"){
         chosenColor = colorOrange;
     }
+    if(color === "erase"){
+        chosenColor = colorErase;
+    }
 
   
    
@@ -101,6 +105,12 @@ buttonClickedBlue.addEventListener("click", (e) => {
 
 const buttonClickedOrange = document.querySelector(".button-colorOrange");
 buttonClickedOrange.addEventListener("click", (e) => {
+    e.preventDefault();
+    getSelectedColor(e.srcElement.id);
+})
+
+const buttonClickedErase = document.querySelector(".button-colorErase");
+buttonClickedErase.addEventListener("click", (e) => {
     e.preventDefault();
     getSelectedColor(e.srcElement.id);
 })

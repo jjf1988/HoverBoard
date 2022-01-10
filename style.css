@@ -18,7 +18,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: 2px;
-    width: 70%;
+    width: 1400px;
     background-color: #1d1d1d;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -47,6 +47,10 @@ body {
 
 #red {
     color: #d43e2e
+}
+
+#erase {
+    color:antiquewhite;
 }
  
 button {
